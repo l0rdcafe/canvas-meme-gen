@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // main drawing logic
   const drawMeme = () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     if (imgFile == null) {
       ctx.strokeRect(0, 0, canvas.width, canvas.height);
       ctx.drawImage(defaultImg, 1, 1, canvas.width, canvas.height);
