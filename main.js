@@ -44,10 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   defaultImg.src =
     "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640";
   // draw meme when img loads
-  defaultImg.onload = () => {
-    // first draw
-    drawMeme();
-  };
+  defaultImg.onload = drawMeme;
 
   // event listeners for input fields
   headerInput.addEventListener("keyup", ({ target: { value } }) => {
@@ -70,9 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = new Image();
         img.src = result;
         imgFile = img;
-        img.onload = () => {
-          drawMeme();
-        };
+        img.onload = drawMeme;
       };
       reader.readAsDataURL(file);
     },
