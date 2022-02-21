@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // draw dank meme text
   const drawText = () => {
-    ctx.font = "36pt Impact";
+    ctx.font = "30pt Impact";
     ctx.textAlign = "center";
     ctx.fillStyle = "white";
     ctx.strokeStyle = "black";
